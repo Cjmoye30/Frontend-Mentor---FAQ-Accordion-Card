@@ -1,0 +1,218 @@
+.attribution { font-size: 11px; text-align: center; margin-top: 100px; margin-bottom: 200px }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  font-family: 'Kumbh Sans', sans-serif;
+  padding-top: 200px;
+  padding: 100px 75px;
+}
+
+h1 {
+  font-weight: 700;
+  color: hsl(238, 29%, 16%);
+}
+
+h6, p {
+  font-weight: 400;
+}
+
+h6 {
+  color: hsl(237, 12%, 33%);
+}
+
+p {
+  color: hsl(240, 6%, 50%);
+}
+
+.container {
+  display: flex;
+  position: relative;
+  height: 550px;
+  max-width: 1000px;
+  background-color: #fff;
+  overflow: visible;
+  border-radius: 10px;
+  padding: 0;
+  margin: auto;
+}
+
+/* Creating a dummy div to keep the box image in the correct place */
+.dummy-div {
+  position: relative;
+}
+
+.illustration-box-pic {
+  position: absolute;
+  top: 205px;
+  left: -125px;
+  z-index: 1;
+}
+
+.illustration-box-pic-2 {
+  display: none;
+}
+
+.left-side {
+  display: flex;
+  position: relative;
+  background-position: right;
+  background-size: 800px;
+  background-repeat: no-repeat;
+  width: 40%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 10px 0 0 10px;
+}
+
+.left-background {
+  background-image: url(images/bg-pattern-desktop.svg);
+  overflow: hidden;
+  background-position: right;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px 0 0 10px;
+}
+
+.illustration-pic-background {
+  position: absolute;
+  top: 50px;
+  left: -80px;
+}
+
+.illustration-pic-mobile {
+  display: none;
+}
+
+.right-side {
+  display: flex;
+  width: 60%;
+  height: 100%;
+  overflow: hidden;
+  margin: auto;
+  overflow: hidden;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 75px 25px;
+}
+
+.q {
+  display: flex;
+  flex-direction: column;
+  border-bottom: solid;
+  border-color: hsl(240, 5%, 91%);
+  border-width: thin;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.q:hover {
+  color: hsl(14, 88%, 65%);
+}
+
+.question, .answer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.answer {
+  display: none;
+}
+
+.dropdown-arrow {
+  height: 10px;
+}
+
+.rotate-arrow {
+  transform: rotate(180deg);
+}
+
+@media (max-width: 770px) {
+
+  .container {
+    flex-direction: column;
+    height: auto;
+    overflow: visible;
+  }
+
+  .illustration-pic-mobile {
+    background-position: center;
+    display: flex;
+    position: absolute;
+    top: -75px;
+    right: -100px;
+    height: 150px;
+  }
+
+  .illustration-pic-background {
+    background-position: center;
+    display: none;
+    position: absolute;
+    top: -75px;
+    height: 125px;
+    margin: auto;
+ }
+
+ .illustration-box-pic {
+   display: none;
+ }
+
+ .illustration-box-pic-2 {
+   display: block;
+   position: absolute;
+   top: -50px;
+   left: 100px;
+ }
+
+  .left-background {
+
+    overflow: visible;
+    height: 100px;
+    position: relative;
+  }
+
+  .left-side {
+    background-image: url(images/bg-pattern-mobile.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow: visible;
+  }
+
+  .q {
+    padding: 15px 0;
+  }
+
+  .right-side {
+    width: 100%;
+  }
+
+  .row {
+    padding: 0 10% 20% 10%;
+  }
+
+  .header-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 25px;
+  }
